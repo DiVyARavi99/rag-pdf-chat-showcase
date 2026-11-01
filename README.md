@@ -6,7 +6,6 @@ and every answer shows the retrieved chunks, their similarity scores and the exa
  
 
 
-https://github.com/user-attachments/assets/5777758a-95ce-4096-b710-172a04a1358e
 
 
  
