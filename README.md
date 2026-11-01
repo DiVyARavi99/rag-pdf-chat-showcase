@@ -5,7 +5,7 @@ Runs fully offline on a Mac with Ollama. The RAG pipeline is hand-written (no La
 and every answer shows the retrieved chunks, their similarity scores and the exact prompt.
  
 
-
+https://github.com/user-attachments/assets/ce5824c9-452d-4517-ab52-e6074a054a49
 
 
  
@@ -35,18 +35,10 @@ Python · Ollama · Llama 3.2 (3B) · nomic-embed-text · NumPy · Streamlit · 
 - **Tested offline:** chunking, search ranking, persistence and the refusal path are unit-tested with fake vectors.
  
 ## What I learned
-- **Built every RAG stage hands-on:** ingestion, chunking, embedding, vector search,
-  thresholding and grounded generation. Writing each step myself, without a framework,
-  showed me what each one contributes and where answers go wrong.
-- **Chunk size and top-k depend on each other:** the context the model sees is roughly
-  chunk size × k. Small chunks need a higher k to cover a full answer, while large chunks
-  with a high k flood the prompt with noise. Changing one means re-tuning the other.
-- **Retrieval settings affect speed, not just quality:** more context makes the 3B model
-  slower to answer, and smaller chunks mean more embeddings to compute at indexing time.
-  The best setting balances answer quality against latency.
-- **Real data breaks pipelines:** math symbols in research PDFs came out of extraction as
-  invalid Unicode and crashed embedding. I fixed it with a normalization step in ingestion
-  and a regression test.
+- [Your finding from the chunk-size experiment]
+- [Your finding from the threshold or top-k experiment]
+- Math symbols in research PDFs came out of extraction as invalid Unicode and crashed embedding.
+  I fixed it with a normalization step in ingestion and a regression test.
  
 ## Source code
-The source is in a private repository and is available on request.
+The source is in a private repository and is available on request. Message me on [LinkedIn](YOUR-LINKEDIN-URL).
