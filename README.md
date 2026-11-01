@@ -1,4 +1,4 @@
-# Chat with your PDFs: local RAG from scratch
+# Contexta - Chat with your PDFs: local RAG from scratch
  
 Ask questions about your PDFs and get answers grounded in them, with page citations.
 Runs fully offline on a Mac with Ollama. The RAG pipeline is hand-written (no LangChain),
